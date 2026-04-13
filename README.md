@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 三上剛太 | ポートフォリオサイト
 
-## Getting Started
+システム開発・インフラエンジニアとしてのポートフォリオサイトと、制作実績サンプルのLPページです。
 
-First, run the development server:
+## 技術スタック
+
+- **フレームワーク**: Next.js 16 (App Router)
+- **スタイリング**: Tailwind CSS v4
+- **フォント**: Outfit / Noto Sans JP / IBM Plex Mono（next/font）
+- **アイコン**: Font Awesome 6
+
+## ページ構成
+
+| パス | 内容 | テーマ |
+|------|------|--------|
+| `/` | ポートフォリオ（サービス・スキル・実績・稼働時間・お問い合わせ） | ダーク |
+| `/lp` | マーケティングSaaS LPサンプル（料金・FAQ・フォーム・導入事例） | ライト |
+
+## ローカル開発
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+`http://localhost:3000` で確認できます。
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## ビルド
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+## デプロイ
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Vercelでのデプロイを想定しています。
