@@ -1,5 +1,6 @@
 import Nav from "@/components/Nav";
 import ClientEffects from "@/components/ClientEffects";
+import ContactForm from "@/components/ContactForm";
 import Link from "next/link";
 
 /* ── tiny helpers ── */
@@ -362,30 +363,38 @@ export default function Home() {
             title="お問い合わせ"
             sub="お仕事のご相談やお見積もりのご依頼はお気軽にどうぞ。"
           />
-          <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <a
-              href="https://crowdworks.jp/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-base-card border border-line rounded-2xl p-8 text-center hover:border-accent/40 transition-colors reveal"
-            >
-              <i className="fas fa-briefcase text-3xl text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-txt-primary mb-2">
-                CrowdWorks
-              </h3>
-              <p className="text-txt-secondary text-sm">
-                CrowdWorksからお気軽にメッセージください。
-              </p>
-            </a>
-            <div className="bg-base-card border border-line rounded-2xl p-8 text-center reveal">
-              <i className="fas fa-video text-3xl text-accent mb-4" />
-              <h3 className="text-lg font-semibold text-txt-primary mb-2">
-                Web会議
-              </h3>
-              <p className="text-txt-secondary text-sm">
-                Google Meet / Zoom
-                でのお打ち合わせも可能です。お気軽にご相談ください。
-              </p>
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {/* Left: Form */}
+            <div className="bg-base-card border border-line rounded-2xl p-8 reveal">
+              <ContactForm />
+            </div>
+
+            {/* Right: Other contact methods */}
+            <div className="space-y-6">
+              <a
+                href="https://crowdworks.jp/public/employees/6329210"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-base-card border border-line rounded-2xl p-8 text-center hover:border-accent/40 transition-colors reveal"
+              >
+                <i className="fas fa-briefcase text-3xl text-accent mb-4" />
+                <h3 className="text-lg font-semibold text-txt-primary mb-2">
+                  CrowdWorks
+                </h3>
+                <p className="text-txt-secondary text-sm">
+                  CrowdWorksからもお気軽にメッセージください。
+                </p>
+              </a>
+              <div className="bg-base-card border border-line rounded-2xl p-8 text-center reveal">
+                <i className="fas fa-video text-3xl text-accent mb-4" />
+                <h3 className="text-lg font-semibold text-txt-primary mb-2">
+                  Web会議
+                </h3>
+                <p className="text-txt-secondary text-sm">
+                  Google Meet / Zoom
+                  でのお打ち合わせも可能です。お気軽にご相談ください。
+                </p>
+              </div>
             </div>
           </div>
         </div>
