@@ -325,6 +325,18 @@ export default function Home() {
               href="/lp"
             />
             <WorkCard
+              title="イタリアンレストラン サイト"
+              desc="架空のイタリアンレストランのコーポレートサイト。メニュー紹介、店舗情報、アクセス、予約導線。"
+              tags={["Next.js", "Tailwind CSS", "React"]}
+              href="/demo/restaurant"
+            />
+            <WorkCard
+              title="美容室 サイト"
+              desc="架空の美容室サイト。メニュー・料金表、スタイリスト紹介、ネット予約導線。"
+              tags={["Next.js", "Tailwind CSS", "React"]}
+              href="/demo/salon"
+            />
+            <WorkCard
               title="ポートフォリオサイト"
               desc="本サイト。ダークテーマ、ターミナル風デザイン、スクロールアニメーション、レスポンシブ対応。"
               tags={["Next.js", "Tailwind CSS", "React"]}
